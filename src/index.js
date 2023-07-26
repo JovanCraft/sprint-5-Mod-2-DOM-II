@@ -52,7 +52,7 @@ bottomButtons.forEach(button => {
 
 //seventh idea: create a wheel event that pops up an alert at the top of the page saying 'betcha can't wait to get to the bottom when the wheel is rolled!
 
-document.body.addEventListener('wheel', event => {
+document.body.addEventListener('wheel', () => {
     alert(`BETCHA CAN'T WAIT TO GET TO THE BOTTOM, HUH??`)
 })
 
@@ -87,8 +87,12 @@ links.forEach(link => {
     })
 })
 
-//tenth idea: print an alert message when using the scroll bar!
+//tenth idea: change the cfont size of the font of the paragraphs when mouse runs over them!
 
-window.addEventListener('scroll', event => {
-    alert(`WHAT'RE YA WAITIN' FOR?!?!`)
+const pS = document.body.querySelectorAll('p')
+
+pS.forEach(p => {
+    p.addEventListener('mouseover', event => {
+        event.target.style.fontSize = '25px'
+    })
 })
