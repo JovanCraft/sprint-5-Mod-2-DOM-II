@@ -1,8 +1,8 @@
 import './less/index.less'
 
 // Your code goes here!
-
-//first idea: change 'fun in the sun' button mouseover option to yellow or orange!
+window.addEventListener("DOMContentLoaded", () => {
+    //first idea: change 'fun in the sun' button mouseover option to yellow or orange!
 
 const bottomButtons = document.querySelectorAll('.destination .btn')
 
@@ -95,4 +95,6 @@ pS.forEach(p => {
     p.addEventListener('mouseover', event => {
         event.target.style.fontSize = '25px'
     })
+})
+
 })
