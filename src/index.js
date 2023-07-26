@@ -73,14 +73,22 @@ links.forEach(link => {
     link.addEventListener('mouseover', event => {
         if(link.textContent === 'Home'){
             event.target.textContent = 'House!'
+            event.preventDefault()
         } else if(link.textContent === 'About Us'){
             event.target.textContent = 'Learning Spot!'
+            event.preventDefault()
         } else if(link.textContent === 'Blog'){
             event.target.textContent = 'Come See!'
+            event.preventDefault()
         } else if(link.textContent === 'Contact'){
             event.target.textContent = 'Hit Us Up!'
+            event.preventDefault()
         }
     })
 })
 
-//tenth idea: 
+//tenth idea: print an alert message when using the scroll bar!
+
+window.addEventListener('scroll', event => {
+    alert(`WHAT'RE YA WAITIN' FOR?!?!`)
+})
