@@ -49,3 +49,38 @@ bottomButtons.forEach(button => {
         event.target.textContent = 'Geez, calm down..once is enough lol'
     })
 })
+
+//seventh idea: create a wheel event that pops up an alert at the top of the page saying 'betcha can't wait to get to the bottom when the wheel is rolled!
+
+document.body.addEventListener('wheel', event => {
+    alert(`BETCHA CAN'T WAIT TO GET TO THE BOTTOM, HUH??`)
+})
+
+//eighth idea: make the buttons disappear when the enter key is pressed!
+
+window.addEventListener('keydown', event => {
+    if(event.key === 'Enter'){
+        document.body.textContent = `PSYCHE!!! 😜😂`
+        document.body.style.fontSize = '50px'
+    }
+})
+
+//nineth idea: change the text of the nav links when the mouse is over them!
+
+const links = document.querySelectorAll('.nav-link')
+
+links.forEach(link => {
+    link.addEventListener('mouseover', event => {
+        if(link.textContent === 'Home'){
+            event.target.textContent = 'House!'
+        } else if(link.textContent === 'About Us'){
+            event.target.textContent = 'Learning Spot!'
+        } else if(link.textContent === 'Blog'){
+            event.target.textContent = 'Come See!'
+        } else if(link.textContent === 'Contact'){
+            event.target.textContent = 'Hit Us Up!'
+        }
+    })
+})
+
+//tenth idea: 
