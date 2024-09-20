@@ -9,7 +9,7 @@ Fun Bus wants you to make their site more interactive. They are relying on you t
 * [x] Create a forked copy of this project.
 * [x] Clone your OWN version of the repository.
 * [ ] Implement the project on the main branch, committing changes regularly.
-* [ ] Push commits: `git push origin main`.
+* [x] Push commits: `git push origin main`.
 
 ## Running the project
 
@@ -26,7 +26,7 @@ Do not **move or rename any files** in this project. The website's source files 
 
 * [ ] Using your [index.js file](src/index.js), create [event listeners](https://developer.mozilla.org/en-US/docs/Web/Events) of at least 10 _different_ types. You must Use your creativity to make the Fun Bus site more interactive. For example you could change colors, animate objects, add DOM elements, remove them, etc.
 
-* [ ] Here are some event types you could try to use:
+* [x] Here are some event types you could try to use:
   * [x] `mouseover`
   * [x] `keydown`
   * [x] `wheel`
@@ -47,3 +47,6 @@ Note: Drag and drop is a bit more advanced than the others. It's not actually a 
 ## Submission Format
 
 * [ ] Submit project using Codegrade, as per the instructions in the learning platform.
+
+
+
